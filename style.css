@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Outfit", sans-serif;
 }
         
 :root{
@@ -16,24 +16,31 @@ body{
     background-color: var(--white);
     color: var(--blue);
     line-height: 1;
+    overflow: visible;
 }
 
+
+/* -----------------------HEADER--------------------------- */
 
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 40px;
     background-color: var(--beige);
     position: sticky;
     top: 0;
-    box-shadow: 0px 4px 10px rgba(88, 88, 94, 0.2);
     z-index: 10;
+    box-shadow: 0px 4px 10px rgba(88, 88, 94, 0.2);
 }
 
-.logo{
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 60px; 
+}
+
+.logo a{
     font-size: 1.6rem;
+    text-decoration: none;
     font-weight: bold;
     color: var(--red);
 }
@@ -46,7 +53,6 @@ nav a{
     color: var(--blue);
     transition: color 0.25s, font-size 1s ease;
 }
-
 nav a:hover{
     color: var(--red);
     font-size: 1.1rem;
@@ -62,12 +68,14 @@ nav a:hover{
 }
 
 
+/* -----------------------HEAD--------------------------- */
+
 
 .head{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 100px;
+    padding: 60px 100px;
     background-color: var(--beige);
 }
 
@@ -79,7 +87,7 @@ nav a:hover{
     font-size: 4rem;
     font-weight: bolder;
     color: var(--red);
-    width: 90%;
+    width: 80%;
     margin-bottom: 30px;
 }
 
@@ -108,10 +116,12 @@ nav a:hover{
 }
 
 .head img{
-    width: 35%;
+    width: 40%;
     height: auto;
 }
 
+
+/* -----------------------SECTIONS--------------------------- */
 
 
 section:not(.head){
@@ -124,6 +134,10 @@ section:not(.head){
     margin-bottom: 30px;
     text-align: center;
 }
+
+
+/* ------------------------TENTANG-------------------------- */
+
 
 .tentang {
     display: grid;
@@ -164,11 +178,8 @@ section:not(.head){
 }
 
 
+/* ------------------------METODE-------------------------- */
 
-.dark-bg {
-    background-color: var(--red);
-    color: var(--white);
-}
 
 #metode{
     display: flex;
@@ -176,6 +187,12 @@ section:not(.head){
     justify-content: space-between;              
     padding: 60px 10%;
 }
+
+.metode {
+    background-color: var(--red);
+    color: var(--white);
+}
+
 .text2{
     width: 50%;
     display: flex;
@@ -230,31 +247,13 @@ section:not(.head){
 }
 
 
+/* ------------------------HARGA-------------------------- */
+
+
 #harga{
     border-bottom: 1px solid rgba(47, 45, 77, 0.25);
 }
-.pricing-table {
-    width: 100%;
-    max-width: 750px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    border: 2px solid var(--red);
-}
 
-.pricing-table th, 
-.pricing-table td {
-    padding: 15px;
-    text-align: left;
-    width: 50%;
-}
-.pricing-table td{
-    border: 1px solid rgba(47, 45, 77, 0.25);
-}
-
-.pricing-table th {
-    background-color: var(--red);
-    color: var(--white);
-}
 .harga p{
     text-align: center;
     font-size: 1.5rem;
@@ -263,19 +262,55 @@ section:not(.head){
     margin-top: 20px;
 }
 
+.harga-tabel {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid var(--red);
+}
+
+.harga-tabel th, .harga-tabel td {
+    padding: 15px;
+    text-align: left;
+    width: 50%;
+}
+
+.harga-tabel td{
+    border: 1px solid rgba(47, 45, 77, 0.25);
+}
+
+.harga-tabel th {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+/* ------------------------REVIEW-------------------------- */
 
 
 #review{
     margin-bottom: 60px;
 }
+
 .reviews {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: 30px;
+    overflow-x: auto;
 }
+.reviews::-webkit-scrollbar {
+    height: 4px;
+}
+.reviews::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 10px;
+}
+
 .review-card {
+    flex: 0 0 300px;
     background-color: white;
     text-align: justify;
+    margin-bottom: 40px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -284,15 +319,19 @@ section:not(.head){
 .review-card:hover{
     transform: translateY(-5px) ;
 }
+
 .review-card h3{
     color: var(--red);
     font-size: 1.1rem;
 }
+
 .review-card p{
     color: var(--blue);
     margin-bottom: 20px;
 }
 
+
+/* ------------------------TUTORIAL-------------------------- */
 
 
 #tutorial{
@@ -354,6 +393,8 @@ section:not(.head){
 }
 
 
+/* ------------------------CALL-TO-ACTION-------------------------- */
+
 
 #call-to-action{
     background-color: var(--beige);
@@ -363,6 +404,8 @@ section:not(.head){
     color: var(--red);
 }
 
+
+/* ------------------------KONTAK-------------------------- */
 
 
 #kontak{
@@ -390,6 +433,10 @@ section:not(.head){
     margin-bottom: 10px;
 }
 
+
+/* ------------------------FOOTER-------------------------- */
+
+
 footer{
     background-color: var(--red);
     padding: 20px 100px;
@@ -398,6 +445,8 @@ footer{
     /* border-top: 2px solid var(--white); */
 }
 
+
+/* ------------------------MEDIA-------------------------- */
 
 
 @media (max-width: 768px) {
