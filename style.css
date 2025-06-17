@@ -115,7 +115,7 @@ nav a:hover{
 
 
 section:not(.head){
-    padding: 60px 10%;
+    padding: 60px 100px;
     line-height: 1.5;
 }
 
@@ -392,7 +392,7 @@ section:not(.head){
 
 footer{
     background-color: var(--red);
-    padding: 20px 122px;
+    padding: 20px 100px;
     color: var(--white);
     font-weight: bold;
     /* border-top: 2px solid var(--white); */
