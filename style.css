@@ -356,7 +356,7 @@ section:not(.head){
     font-size: 2rem;
     color: var(--red);
     text-align: center;
-    width: 22%;
+    width: 68px;
     padding: 10px;
     position: absolute;
     top: 0;
