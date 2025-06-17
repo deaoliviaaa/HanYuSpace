@@ -444,24 +444,3 @@ footer{
     font-weight: bold;
     /* border-top: 2px solid var(--white); */
 }
-
-
-/* ------------------------MEDIA-------------------------- */
-
-
-@media (max-width: 768px) {
-    .grid-2, 
-    .testimonials,
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    header {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
-    nav {
-        margin-top: 15px;
-    }
-}
