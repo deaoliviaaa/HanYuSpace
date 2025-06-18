@@ -116,7 +116,7 @@ nav a:hover{
 }
 
 .head img{
-    width: 40%;
+    width: 400px;
     height: auto;
 }
 
@@ -203,7 +203,7 @@ section:not(.head){
     margin-bottom: 30px;
 }
 .cards{
-    width: 50%;
+    width: 400px;
     display: flex;
     justify-content: center;
 }
@@ -368,7 +368,7 @@ section:not(.head){
     border: none;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(88, 88, 94, 0.2);
-    width: 90%;
+    width: 300px;
     margin: auto;
 }
 .tutor img{
